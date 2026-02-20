@@ -1,6 +1,6 @@
 # 🚧 InfraestructuraVial
 
-## CRUD
+## 🧾CRUD
 Descripción: Aplicación de consola en **Python** que implementa un sistema **CRUD (Crear, Leer, Actualizar y Eliminar)** para la gestión de información relacionada con infraestructura vial, utilizando **Supabase** como backend.
 ---
 
