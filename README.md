@@ -17,3 +17,22 @@ Puedes verificarlo con los siguientes comandos:
 python --version
 pip --version
 ```
+
+### 📦 Instalación de dependencias
+
+Para ejecutar el proyecto es necesario instalar las siguientes librerías:
+
+```bash
+pip install rich
+pip install supabase
+  ```
+
+
+## DASHBOARD
+Descripción: Web encargada de mostrar datos desde SUPABASE para la realización de métricas especiales.
+---
+
+### ⚙️ Requisitos previos
+
+Antes de comenzar, asegúrate de tener la URL y la clave anon de SUPABASE
+
