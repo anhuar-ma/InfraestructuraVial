@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  dashboard:
+    image: nginx:alpine
+    container_name: dashboard_civil
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: always

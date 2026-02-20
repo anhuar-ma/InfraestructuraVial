@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Ingeniería Civil</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Dashboard de Infraestructura</h1>
+
+  <!-- ================= KPIs ================= -->
+  <div class="row text-center mb-4">
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h6>Estructuras</h6>
+        <h2 id="kpiEstructuras" class="text-primary">0</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h6>Inspecciones</h6>
+        <h2 id="kpiInspecciones" class="text-success">0</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h6>Mantenimientos</h6>
+        <h2 id="kpiMantenimientos" class="text-warning">0</h2>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card p-3 shadow">
+        <h6>Sensores</h6>
+        <h2 id="kpiSensores" class="text-danger">0</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= GRÁFICAS ================= -->
+  <div class="row">
+
+    <!-- Inspecciones por mes -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-3 shadow">
+        <h5>Inspecciones por mes</h5>
+        <canvas id="graficaInspecciones"></canvas>
+      </div>
+    </div>
+
+    <!-- Mantenimientos por estado -->
+    <div class="col-md-6 mb-4">
+      <div class="card p-3 shadow">
+        <h5>Mantenimientos por estado</h5>
+        <canvas id="graficaMantenimientos"></canvas>
+      </div>
+    </div>
+
+    <!-- Deterioro promedio -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-3 shadow">
+        <h5>Nivel de deterioro promedio</h5>
+        <canvas id="graficaDeterioro"></canvas>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Tu JS -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
