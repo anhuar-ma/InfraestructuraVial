@@ -49,7 +49,7 @@ Estas credenciales son necesarias para establecer la conexión entre la aplicaci
 
 Debes agregar tus credenciales de Supabase en tu archivo JavaScript principal o en un archivo de configuración:
 
-```javascript
+```bash
 const SUPABASE_URL = "https://tu-proyecto.supabase.co";
 const SUPABASE_ANON_KEY = "tu_api_key";
 ```
