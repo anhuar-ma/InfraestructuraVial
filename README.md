@@ -28,11 +28,28 @@ pip install supabase
   ```
 
 
-## DASHBOARD
-Descripción: Web encargada de mostrar datos desde SUPABASE para la realización de métricas especiales.
+## 📊 DASHBOARD
+
+Descripción: Aplicación web encargada de visualizar información almacenada en **Supabase**, permitiendo generar métricas, análisis y reportes en tiempo real para la toma de decisiones sobre la infraestructura vial.
+El dashboard presenta los datos de manera clara mediante tablas, indicadores y gráficas interactivas.
 ---
 
 ### ⚙️ Requisitos previos
 
-Antes de comenzar, asegúrate de tener la URL y la clave anon de SUPABASE
+Antes de comenzar, asegúrate de contar con lo siguiente:
 
+- 🔗 **URL del proyecto en Supabase**
+- 🔑 **Clave pública (anon key) de Supabase**
+
+Estas credenciales son necesarias para establecer la conexión entre la aplicación web y la base de datos.
+
+---
+
+### 🔐 Configuración básica
+
+Debes agregar tus credenciales de Supabase en tu archivo JavaScript principal o en un archivo de configuración:
+
+```javascript
+const SUPABASE_URL = "https://tu-proyecto.supabase.co";
+const SUPABASE_ANON_KEY = "tu_api_key";
+```
